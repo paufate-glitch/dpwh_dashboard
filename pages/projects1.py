@@ -25,7 +25,7 @@ elif nav_target == "about":
 elif nav_target == "contacts":
     st.switch_page("pages/contacts.py")
 
-LOGO_PATH = "pages\Dashboard figures\DPWH_LOGO.png"
+LOGO_PATH = "pages/Dashboard figures/DPWH_LOGO.png"
 
 # ════════════════════════════════════════════════════════════════════════════
 # ── SECTION A: PROJECT DATA  ─────────────────────────────────────────────
