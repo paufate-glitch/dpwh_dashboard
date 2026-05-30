@@ -23,7 +23,7 @@ elif nav == "contacts":
     st.switch_page("pages/contacts.py")
 
 
-LOGO_PATH = r"pages\Dashboard figures\DPWH_LOGO.png"
+LOGO_PATH = "pages/Dashboard figures/DPWH_LOGO.png"
 
 def get_logo_src():
     try:
@@ -43,14 +43,14 @@ def get_image_base64(path, mime="image/jpeg"):
     except Exception:
         return ""
 
-HEX1_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp.jpg")
-HEX2_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp1.jpg")
-HEX3_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp2.jpg")
-HEX4_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp3.jpg")
-HEX5_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp4.jpg")
-HEX6_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp5.jpg")
-HEX7_IMG   = get_image_base64(r"pages\Dashboard figures\DPWHhp6.jpg")
-HOMEBG_IMG = get_image_base64(r"pages\Dashboard figures\homebg.jpg")
+HEX1_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp.jpg")
+HEX2_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp1.jpg")
+HEX3_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp2.jpg")
+HEX4_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp3.jpg")
+HEX5_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp4.jpg")
+HEX6_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp5.jpg")
+HEX7_IMG   = get_image_base64("pages/Dashboard figures/DPWHhp6.jpg")
+HOMEBG_IMG = get_image_base64("pages/Dashboard figures/homebg.jpg")
 
 
 
