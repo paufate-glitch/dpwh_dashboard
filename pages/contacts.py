@@ -460,6 +460,40 @@ body {
     .nav-links a { font-size: 12px; letter-spacing: 1px; }
     .c-card { padding: 28px 22px 26px; min-height: auto; }
 }
+
+@media (max-width: 768px) {{
+  .dpwh-nav {{ padding: 0 16px; height: 56px; }}
+  .nav-links {{ gap: 14px; }}
+  .nav-links a {{ font-size: 11px; letter-spacing: 1px; }}
+  .nav-logo-text .t2 {{ display: none; }}
+
+  .page-header {{ padding: 80px 18px 32px !important; }}
+  .header-stats {{ display: none !important; }}
+  .header-title {{ font-size: 52px !important; }}
+
+  .cards-wrap {{ padding: 28px 18px 48px !important; }}
+  .grid-row.two {{ grid-template-columns: 1fr !important; }}
+  .grid-row.three {{ grid-template-columns: 1fr !important; }}
+
+  .form-grid {{ grid-template-columns: 1fr !important; }}
+  .c-card {{ padding: 24px 18px !important; min-height: auto !important; }}
+
+  .dev-list {{ gap: 12px; }}
+  .dev-name {{ font-size: 14px; }}
+
+  .dpwh-footer {{
+    padding: 24px 18px !important;
+    flex-direction: column;
+  }}
+  .footer-r {{ flex-wrap: wrap; gap: 12px; }}
+}}
+
+@media (max-width: 480px) {{
+  .nav-links a {{ font-size: 10px; }}
+  .header-title {{ font-size: 40px !important; }}
+}}
+
+
 </style>
 </head>
 <body>

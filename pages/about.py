@@ -512,6 +512,44 @@ body {
     .hero-right    { display: none; }
 }
 
+@media (max-width: 768px) {{
+  .dpwh-nav {{ padding: 0 16px; height: 56px; }}
+  .nav-links {{ gap: 14px; }}
+  .nav-links a {{ font-size: 11px; letter-spacing: 1px; }}
+  .nav-logo-text .t2 {{ display: none; }}
+
+  .about-hero {{ padding: 80px 18px 40px; }}
+  .about-hero-inner {{
+    grid-template-columns: 1fr !important;
+  }}
+  .hero-right {{ display: none !important; }}
+  .team-strip {{ display: none !important; }}
+  .hero-title {{ font-size: 52px !important; }}
+
+  .about-wrap {{
+    grid-template-columns: 1fr !important;
+    padding: 40px 18px !important;
+  }}
+  .about-img-stack {{ height: 260px; margin-bottom: 20px; }}
+
+  .mission-strip {{ padding: 40px 18px !important; }}
+  .mission-inner {{ grid-template-columns: 1fr !important; gap: 24px; }}
+
+  .pillars-section {{ padding: 40px 18px !important; }}
+  .pillars-grid {{ grid-template-columns: 1fr 1fr !important; }}
+
+  .fire-strip {{ padding: 16px 18px !important; }}
+  .strip-text {{ font-size: 14px !important; }}
+
+  .dpwh-footer {{ padding: 28px 18px !important; flex-direction: column; }}
+}}
+
+@media (max-width: 480px) {{
+  .pillars-grid {{ grid-template-columns: 1fr !important; }}
+  .nav-links a {{ font-size: 10px; }}
+  .hero-sub {{ font-size: 12px !important; }}
+}}
+
 </style>
 </head>
 <body>

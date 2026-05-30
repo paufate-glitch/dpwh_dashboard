@@ -354,6 +354,32 @@ body {
     .hero-cta-row { flex-direction: column; align-items: flex-start; }
     .btn-primary, .btn-outline { width: 100%; text-align: center; }
 }
+
+@media (max-width: 768px) {{
+  .dpwh-nav {{ padding: 0 16px; height: 56px; }}
+  .nav-links {{ gap: 14px; }}
+  .nav-links a {{ font-size: 11px; letter-spacing: 1px; }}
+  .nav-logo-text .t2 {{ display: none; }}
+
+  .hero-scene {{ height: auto; min-height: 100vh; }}
+  .hero-text-wrap {{
+    position: relative; top: auto; left: auto;
+    transform: none; margin: 80px 18px 40px;
+    max-width: 100%;
+  }}
+  .hex-1, .hex-2, .hex-3,
+  .hex-4, .hex-5, .hex-6 {{ display: none; }}
+  .btn-primary, .btn-outline {{
+    width: 100%; text-align: center; display: block;
+  }}
+  .hero-cta-row {{ flex-direction: column; }}
+}}
+
+@media (max-width: 480px) {{
+  .hero-title {{ font-size: 52px !important; }}
+  .nav-links a {{ font-size: 10px; }}
+}}
+
 </style>
 </head>
 <body>

@@ -1300,21 +1300,63 @@ body{{
 .footer-bottom{{border-top:1px solid rgba(255,255,255,.05);padding-top:18px;display:flex;justify-content:space-between;align-items:center}}
 .footer-copy{{font-size:.72rem;color:#3d444d;letter-spacing:.05em}}
 .footer-brand{{font-size:1rem;font-weight:800;color:var(--accent);letter-spacing:.22em;opacity:.4}}
-@media(max-width:1024px){{
-  .charts-row{{grid-template-columns:1fr 1fr}}
-  .kpi-row{{grid-template-columns:1fr 1fr}}
-  #cards-container{{grid-template-columns:1fr 1fr}}
+
+@media (max-width: 768px) {{
+  .nav {{ padding: 0 16px; height: 56px; }}
+  .nav-links {{ gap: 14px; }}
+  .nav-links a {{ font-size: 11px; letter-spacing: 1px; }}
+  .nav-logo-text .t2 {{ display: none; }}
+
+  .services {{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }}
+  .center-banner {{
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    padding: 32px 18px !important;
+  }}
+  .center-banner::after {{ display: none !important; }}
+  .q-bridges  {{ grid-column: 1 !important; grid-row: 2 !important; height: 200px; }}
+  .q-flood    {{ grid-column: 1 !important; grid-row: 3 !important; height: 200px; }}
+  .q-buildings{{ grid-column: 1 !important; grid-row: 4 !important; height: 200px; }}
+  .q-roads    {{ grid-column: 1 !important; grid-row: 5 !important; height: 200px; }}
+
+  .stats {{ flex-wrap: wrap; padding-top: 32px !important; }}
+  .stat {{ flex: 0 0 50%; padding: 10px 12px 20px; }}
+  .stat-num {{ font-size: 2rem; }}
+
+  .projects-content {{ padding: 24px 14px !important; }}
+  .kpi-row {{ grid-template-columns: 1fr 1fr !important; }}
+  .charts-row {{ grid-template-columns: 1fr !important; }}
+  #cards-container {{ grid-template-columns: 1fr !important; }}
+
+  .controls-bar {{
+    flex-direction: column;
+    align-items: stretch !important;
+    width: 100%;
+  }}
+  .ctrl-select, .ctrl-input {{ width: 100% !important; }}
+  .sec-header {{
+    flex-direction: column;
+    align-items: flex-start !important;
+  }}
+  .cat-pills {{
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-bottom: 6px;
+  }}
+  .footer {{ padding: 28px 16px !important; }}
+  .footer-grid {{ grid-template-columns: 1fr !important; }}
 }}
-@media(max-width:700px){{
-  .services{{grid-template-columns:1fr 200px 1fr;grid-template-rows:200px 200px}}
-  .center-banner::after{{border-left-width:100px;border-right-width:100px;border-top-width:52px;bottom:-52px}}
-  .stats{{padding-top:44px}}
-  .projects-content{{padding:40px 18px}}
-  .charts-row{{grid-template-columns:1fr}}
-  #cards-container{{grid-template-columns:1fr}}
-  .kpi-row{{grid-template-columns:1fr 1fr}}
-  .nav{{padding:0 18px}}
+
+@media (max-width: 480px) {{
+  .nav-links a {{ font-size: 10px; letter-spacing: 0.5px; }}
+  .sec-title {{ font-size: 1.6rem !important; }}
+  .banner-title {{ font-size: 1.6rem !important; }}
+  .stat-num {{ font-size: 1.6rem !important; }}
 }}
+
 </style>
 </head>
 <body>
