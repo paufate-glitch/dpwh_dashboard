@@ -4,7 +4,7 @@ import base64
 from pathlib import Path
 
 # ── Logo ─────────────────────────────────────────────────────────────────
-LOGO_PATH = "pages\Dashboard figures\DPWH_LOGO.png"
+LOGO_PATH = "pages/Dashboard figures/DPWH_LOGO.png"
 
 def get_logo_src():
     try:
