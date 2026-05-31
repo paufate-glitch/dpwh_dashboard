@@ -579,30 +579,26 @@ body {
             <div class="hero-crumb">LANES & LEDGERS <span>/</span> About </div>
             <h1 class="hero-title">ABOUT US</h1>
             <p class="hero-sub">
-                This dashboard is the result of our 
-                project dedicated to enhancing transparency 
-                and tracking the progress of 
-                Department of Public Works and Highways (DPWH) 
-                infrastructure developments across the districts of Iloilo. 
-                Our main objective is to transform raw project 
-                data into a clear, accessible visual interface. 
-                By bringing all these details together, 
-                our project aims to give users a straightforward 
-                way to monitor local growth, ensuring that public 
-                infrastructure investments are easily visible and understandable.
+                This dashboard was developed as a final project requirement, 
+                designed to demonstrate how raw government data can be transformed into a clear, 
+                accessible visual interface. It is not affiliated with, nor intended to replace or supplement, 
+                the official Department of Public Works and Highways (DPWH) website or any of its official platforms.
+                
+                Our dashboard focuses specifically on DPWH infrastructure projects across Iloilo City and the 
+                surrounding Iloilo districts, covering the 1st through 4th Engineering Districts alongside the City District. 
+                For each project, the dashboard displays the project type and category, the district it belongs to, 
+                the assigned contractor, the allocated and spent budget, the expected project duration, 
+                and the current completion percentage.
+                
+                The primary goal of this project is academic — to explore how organized, 
+                publicly available data can be visualized in a way that promotes transparency and makes 
+                infrastructure progress easier to understand. We hope this work illustrates how data-driven tools, 
+                even at a student level, can present complex government information in a straightforward and 
+                community-friendly format.
 
-                To provide a complete picture of these developments, 
-                our dashboard carefully tracks all the essential 
-                details for each DPWH initiative. It allows users 
-                to see exactly what kind of project is being built, 
-                which specific district in Iloilo it belongs to, 
-                and the private contractors assigned to execute the work. 
-                Additionally, we designed the dashboard to monitor the 
-                financial and operational scope by displaying the total cost, 
-                the expected duration of the work, and the current overall 
-                percentage of project progress. Through this project, we 
-                hope to demonstrate how organized data can be used to 
-                foster accountability and keep the community informed.
+                All data presented in this dashboard was gathered for educational purposes only. 
+                This project is a student-built compliance requirement and does not represent any 
+                official government initiative or publication.
             </p>
         </div>
         <div class="hero-right">
