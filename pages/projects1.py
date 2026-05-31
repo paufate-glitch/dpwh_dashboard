@@ -5802,9 +5802,9 @@ def _get_summary_stats() -> dict:
     }
 
 def fmt_budget(v: float) -> str:
-    if v >= 1e9: return f"₱{v/1e9:.1f}B"
-    if v >= 1e6: return f"₱{v/1e6:.0f}M"
-    return f"₱{v:,.0f}"
+    if v >= 1e9: return f"₱{v/1e9:.2f}B"
+    if v >= 1e6: return f"₱{v/1e6:.2f}M"
+    return f"₱{v:,.2f}"
 
 
 # Compute stats
