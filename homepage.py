@@ -425,7 +425,7 @@ body {
             <div class="hero-text-wrap">
                 <div class="orange-bar"></div>
                 <div class="hero-text">
-                    <p class="hero-dept">Department of Public Works and Highways</p>
+                    <p class="hero-dept">Department of Public Works and Highways | ILOILO</p>
                     <h1 class="hero-title">
                         TRANS<span class="accent">PARENCY</span><br>
                         BOARD
