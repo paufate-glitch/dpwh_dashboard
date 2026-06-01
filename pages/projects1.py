@@ -6,6 +6,7 @@ import random
 import streamlit as st
 import streamlit.components.v1 as components
 
+
 # ════════════════════════════════════════════════════════════════════════════
 # ── SECTION: STREAMLIT PAGE CONFIG  ────────────────────────────────────
 # ════════════════════════════════════════════════════════════════════════════
@@ -5714,6 +5715,7 @@ PROJECTS: list[dict] = [
 # ════════════════════════════════════════════════════════════════════════════
 # ── SECTION B: DEVELOPER CRUD HELPERS ────────────────────────────────────
 # ════════════════════════════════════════════════════════════════════════════
+@st.cache_data
 def get_logo_src():
     try:
         data = pathlib.Path(LOGO_PATH).read_bytes()
@@ -5771,8 +5773,16 @@ def _resolve_image(image_path: str) -> str:
     return ""
 
 # Resolve images
-for _p in PROJECTS:
-    _p["image_path"] = _resolve_image(_p.get("image_path", ""))
+@st.cache_data
+def get_resolved_projects(projects):
+    result = []
+    for p in projects:
+        p = dict(p)  # don't mutate original
+        p["image_path"] = _resolve_image(p.get("image_path", ""))
+        result.append(p)
+    return result
+
+PROJECTS = get_resolved_projects(PROJECTS)
 
 # ════════════════════════════════════════════════════════════════════════════
 # ── SECTION D: RANDOMISATION ─────────────────────────────────────────────
@@ -5784,11 +5794,13 @@ random.shuffle(PROJECTS)
 # ── SECTION E: DERIVED STATS  ────────────────────────────────────────────
 # ════════════════════════════════════════════════════════════════════════════
 
+@st.cache_data
 def _get_category_counts() -> dict:
     cats = ["Bridges", "Roads", "Buildings and Facilities", "Flood Control and Drainage"]
     return {c: sum(1 for p in PROJECTS if p.get("category") == c) for c in cats}
 
 
+@st.cache_data
 def _get_summary_stats() -> dict:
     years     = sorted({p["year"] for p in PROJECTS if p.get("year")})
     districts = sorted({p["district"] for p in PROJECTS if p.get("district")})
